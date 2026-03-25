@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 bool isSorted(int arr[],int n){
+    // checks is the given Array is sorted or NOT!
     for(int i=1;i<n;i++){
         if(arr[i] < arr[i-1]){
          return false;   
@@ -13,10 +14,12 @@ int main() {
     cout<<"enter the element in an Array:";
     cin>>n;
     int arr[100];
+    // input of an Array.
     for(int i=0;i<n;i++){
         cout<<"enter element "<<i+1<<":";
         cin>>arr[i];
     }
+    // output of a given Array.
     cout<<"your given Array is:"<<endl;
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
